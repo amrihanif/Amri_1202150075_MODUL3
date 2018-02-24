@@ -7,7 +7,6 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 
-import com.example.amrihanif.amrihanif_1202150075_modul3.R;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -47,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         Desc = new ArrayList<>();
         Gambar = new ArrayList<>();
 
-        //Menggunakan Layout Manager, Dan Membuat List Secara Vertical
+
         adapter = new adapterRecyclerView(Title, Desc, Gambar);
         //Memasang Adapter pada RecyclerView
         recyclerView.setAdapter(adapter);

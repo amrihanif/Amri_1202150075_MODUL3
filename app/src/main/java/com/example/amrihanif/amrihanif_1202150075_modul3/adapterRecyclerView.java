@@ -9,7 +9,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.amrihanif.amrihanif_1202150075_modul3.R;
 
 import java.util.ArrayList;
 

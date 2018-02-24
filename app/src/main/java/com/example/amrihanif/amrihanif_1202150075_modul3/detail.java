@@ -9,7 +9,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.amrihanif.amrihanif_1202150075_modul3.R;
 
 public class detail extends AppCompatActivity {
     private int counts = 1;
