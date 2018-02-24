@@ -14,7 +14,6 @@ import java.util.Collections;
 public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
-    private RecyclerView.LayoutManager layoutManager;
     private ArrayList<String> Title;
     private ArrayList<String> Desc;
     private ArrayList<Integer> Gambar;
