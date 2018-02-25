@@ -88,12 +88,12 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
+    //looping untuk menampilkan item
     private void DaftarItem() {
-        for (int w=0; w<title.length; w++) {
-            Gambar.add(gambar[w]);
-            Title.add(title[w]);
-            Desc.add(desc[w]);
+        for (int a=0; w<title.length; w++) {
+            Gambar.add(gambar[a]);
+            Title.add(title[a]);
+            Desc.add(desc[a]);
         }
     }
 
