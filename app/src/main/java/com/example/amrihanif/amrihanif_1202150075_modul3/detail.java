@@ -40,11 +40,12 @@ public class detail extends AppCompatActivity {
         minus = findViewById(R.id.minus);
         value = findViewById(R.id.txt);
         battery = findViewById(R.id.battery);
-
+        //memanggil level list
         battery.setImageResource(R.drawable.baterai);
         value.setText(Integer.toString(counts+1) + "L");
 
     }
+    //jika tombol min disentuh
     public void minus(View view) {
         counts--;
         if (value != null) {
@@ -78,7 +79,7 @@ public class detail extends AppCompatActivity {
             }
         }
     }
-
+    //jika tombol plus disentuh
     public void plus(View view) {
         counts++;
         if (value != null) {
