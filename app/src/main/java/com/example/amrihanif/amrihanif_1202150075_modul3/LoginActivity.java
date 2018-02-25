@@ -26,7 +26,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String usernameKey = user.getText().toString();
                 String passwordKey = pass.getText().toString();
-
+                //Username dan password untuk login
                 if (usernameKey.equals("ead") && passwordKey.equals("mobile")){
                     Toast.makeText(getApplicationContext(),"Login sukses",Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
