@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 
 public class detail extends AppCompatActivity {
-    private int counts = 1;
+    private int counts = 0;
     private Button plus, minus;
     private TextView value;
     private ImageView battery;
@@ -41,9 +41,42 @@ public class detail extends AppCompatActivity {
         value = findViewById(R.id.txt);
         battery = findViewById(R.id.battery);
 
-        battery.setImageResource(R.drawable.ic_battery_20_black_24dp);
-        value.setText(Integer.toString(counts) + "L");
+        battery.setImageResource(R.drawable.baterai);
+        value.setText(Integer.toString(counts+1) + "L");
 
+    }
+    public void minus(View view) {
+        counts--;
+        if (value != null) {
+            switch (counts) {
+                case 6:
+                    battery.setImageResource(R.drawable.ic_battery_full_black_24dp);
+                    value.setText(Integer.toString(counts) + "L");
+                    Toast.makeText(this, "Battery Full", Toast.LENGTH_LONG).show();
+                    break;
+                case 5:
+                    battery.setImageResource(R.drawable.ic_battery_90_black_24dp);
+                    value.setText(Integer.toString(counts) + "L");
+                    break;
+                case 4:
+                    battery.setImageResource(R.drawable.ic_battery_60_black_24dp);
+                    value.setText(Integer.toString(counts) + "L");
+                    break;
+                case 3:
+                    battery.setImageResource(R.drawable.ic_battery_50_black_24dp);
+                    value.setText(Integer.toString(counts) + "L");
+                    break;
+                case 2:
+                    battery.setImageResource(R.drawable.ic_battery_30_black_24dp);
+                    value.setText(Integer.toString(counts) + "L");
+                    break;
+                case 1:
+                    battery.setImageResource(R.drawable.ic_battery_20_black_24dp);
+                    value.setText(Integer.toString(counts) + "L");
+                    Toast.makeText(this, "Battery Low", Toast.LENGTH_LONG).show();
+                    break;
+            }
+        }
     }
 
     public void plus(View view) {
@@ -80,37 +113,5 @@ public class detail extends AppCompatActivity {
         }
     }
 
-    public void minus(View view) {
-        counts--;
-        if (value != null) {
-            switch (counts) {
-                case 6:
-                    battery.setImageResource(R.drawable.ic_battery_full_black_24dp);
-                    value.setText(Integer.toString(counts) + "L");
-                    Toast.makeText(this, "Battery Full", Toast.LENGTH_LONG).show();
-                    break;
-                case 5:
-                    battery.setImageResource(R.drawable.ic_battery_90_black_24dp);
-                    value.setText(Integer.toString(counts) + "L");
-                    break;
-                case 4:
-                    battery.setImageResource(R.drawable.ic_battery_60_black_24dp);
-                    value.setText(Integer.toString(counts) + "L");
-                    break;
-                case 3:
-                    battery.setImageResource(R.drawable.ic_battery_50_black_24dp);
-                    value.setText(Integer.toString(counts) + "L");
-                    break;
-                case 2:
-                    battery.setImageResource(R.drawable.ic_battery_30_black_24dp);
-                    value.setText(Integer.toString(counts) + "L");
-                    break;
-                case 1:
-                    battery.setImageResource(R.drawable.ic_battery_20_black_24dp);
-                    value.setText(Integer.toString(counts) + "L");
-                    Toast.makeText(this, "Battery Low", Toast.LENGTH_LONG).show();
-                    break;
-            }
-        }
-    }
+
 }
