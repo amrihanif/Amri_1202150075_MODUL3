@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
     }
     //looping untuk menampilkan item
     private void DaftarItem() {
-        for (int a=0; w<title.length; w++) {
+        for (int a=0; a<title.length; a++) {
             Gambar.add(gambar[a]);
             Title.add(title[a]);
             Desc.add(desc[a]);
